@@ -1,0 +1,16 @@
+html {
+    box-sizing: border-box;
+}
+*,
+*::after,
+*::before {
+    box-sizing: inherit;
+}
+
+body {
+    background-color: yellow;
+}
+.box {
+    display: flex;
+    transition: all 0.3s;
+}
