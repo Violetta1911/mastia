@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+    height: 100%;
+}
+
+ *,
+ *::before,
+ *::after {
+     box-sizing: inherit;
+ }
+ 
+ a{
+     display: inline-block;
+     text-decoration: none;
+     color: inherit;
+
+ }
+
+ ul,
+ li,
+ h1, h2, h3, h4, h5,p{
+     margin: 0;
+     padding: 0;
+     list-style: none;
+ }
+ button {
+    outline: none;
+ }
+ 
+ body {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 14px;
+    color: $font-grey;
+     height: 100%;
+      }
+
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
+    // max-width: 1600px;
+    
+}   
+
+.content {
+    flex: 1 0 auto;
+}
+
+#modal {
+    display: none;
+}
+.footer {
+    flex: 0 0 auto;
+}
+ .container {
+    width: 1150px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+h1 {
+    font-size: 35px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-family: 'Raleway', sans-serif;
+    padding: 0;
+
+}
+h2 {
+    font-size: 24px;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+    color: $blue_bg;
+}
+.title-home {
+    
+        color: $blue_bg;
+        position: relative;
+        padding-bottom: 20px;
+        margin-bottom: 28px;
+        &::after {
+            content: '';
+            width: 70px;
+            border-bottom: 1px solid $blue_bg;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+}
+// .container-fluid {
+//     max-width: 100%;
+//     margin: 0 auto;
+//     padding: 0 30px;
+// }
+
+// @media (max-width: 720px) {
+//     .container-fluid {
+//         padding: 0 15px;
+//     }
+// }
+
+// .breadcrumbs {
+//     &__inner {
+//         padding: 45px 0 40px;
+//     }
+//     &__list{
+//         li{
+//             display: inline-block;
+//             position: relative; 
+//             & + li{
+//                 padding-left: 24px;
+//                   &::before{
+//                     content: '-';
+//                     position: absolute;
+//                     left: 8px;
+//                     color: $green;
+//                 }
+//             } 
+//             &:last-child{
+//                 a,
+//                 span{
+//                     color: $bg;
+//                 }
+//             }       
+//         } 
+        
+//     a {
+//         color: #b0bec5;
+//     }
+
+//     }
+// }    
+

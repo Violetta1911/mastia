@@ -1,0 +1,24 @@
+$blue_bg: #22a7f0;
+$blue_fonts: #26a1e4;
+$bg-grey: #323232;
+$bg-brown: #222222;
+$font-grey: #353535;
+$font-brown: #4b4b4b;
+$brown: #161616;
+$blue: #219ee2;
+
+ @mixin flex {
+     display: flex;
+     justify-content: space-between;
+     align-items: center;
+     
+ } 
+ @mixin btn {
+    border: 1px solid #fff;
+    text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+    font-weight: 400;
+   
+ }
+  
+  
