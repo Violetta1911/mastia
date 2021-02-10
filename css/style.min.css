@@ -1,0 +1,1 @@
+html{box-sizing:border-box}*,*::after,*::before{box-sizing:inherit}body{background-color:#af99a8}.box{display:flex;transition:all 0.3s;transform:rotateX(20deg)}
