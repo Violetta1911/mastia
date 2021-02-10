@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.home__slider-item').slick({
+    $('.home__slider').slick({
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -8,7 +8,7 @@ $(function(){
       dots: false,
     });
     
-    $('.projects__items').slick({
+    $('.recent-projects__slider').slick({
         infinite: true,
         slidesToShow: 3,
         slidesToScroll: 3,
@@ -16,4 +16,11 @@ $(function(){
         dots: false,
       });    
       
+      $('.blog__slider').slick({
+        infinite: true,
+        slidesToShow: 2,
+        slidesToScroll: 2,
+        arrows: true,
+        dots: false,
+      }); 
 });
