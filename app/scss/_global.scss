@@ -13,6 +13,7 @@ html {
      display: inline-block;
      text-decoration: none;
      color: inherit;
+     outline: none;
 
  }
 
@@ -33,6 +34,7 @@ html {
     font-size: 14px;
     color: $font-grey;
      height: 100%;
+    
       }
 
 .wrapper {
@@ -54,7 +56,7 @@ html {
     flex: 0 0 auto;
 }
  .container {
-    width: 1150px;
+    width: 1180px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -62,9 +64,10 @@ h1 {
     font-size: 35px;
     margin-bottom: 20px;
     text-transform: uppercase;
-    font-family: 'Raleway', sans-serif;
-    padding: 0;
-
+    font-family: 'Play', sans-serif;
+    color: $blue_bg;
+    font-weight: 400;
+   
 }
 h2 {
     font-size: 24px;
@@ -74,8 +77,16 @@ h2 {
     font-weight: 400;
     color: $blue_bg;
 }
-.title-home {
-    
+h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Play', sans-serif;
+    font-weight: 800;
+    color: $blue_bg;
+    margin-bottom: 30px;
+
+}
+.title-home {    
         color: $blue_bg;
         position: relative;
         padding-bottom: 20px;
@@ -101,35 +112,35 @@ h2 {
 //     }
 // }
 
-// .breadcrumbs {
-//     &__inner {
-//         padding: 45px 0 40px;
-//     }
-//     &__list{
-//         li{
-//             display: inline-block;
-//             position: relative; 
-//             & + li{
-//                 padding-left: 24px;
-//                   &::before{
-//                     content: '-';
-//                     position: absolute;
-//                     left: 8px;
-//                     color: $green;
-//                 }
-//             } 
-//             &:last-child{
-//                 a,
-//                 span{
-//                     color: $bg;
-//                 }
-//             }       
-//         } 
+ .breadcrumbs {
+   
+    &__list{
+        li{
+            display: inline-block;
+            position: relative; 
+            
+            & + li{
+                padding-left: 24px;
+                  &::before{
+                    content: "\f105";
+                    font-family: 'icomoon';
+                    position: absolute;
+                    left: 8px;
+                    color: #fff;
+                }
+            } 
+            // &:last-child{
+            //     a,
+            //     span{
+            //         color: $bg;
+            //     }
+            // }       
+        } 
         
-//     a {
-//         color: #b0bec5;
-//     }
+    a {
+        color: #fff;;
+    }
 
-//     }
-// }    
+    }
+}    
 

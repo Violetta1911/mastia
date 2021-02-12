@@ -28,6 +28,7 @@ function styles() {
       return src([
         'node_modules/normalize.css/normalize.css', 
         'node_modules/slick-carousel/slick/slick.css', 
+        'node_modules/slick-carousel/slick/slick-theme.css', 
         'app/scss/style.scss'])
           .pipe(scss({outputStyle: 'compressed'}))
           .pipe(concat ('style.min.css'))
@@ -40,9 +41,9 @@ function styles() {
 } 
 
  function scripts (){
-    return src([
-        'node_modules/slick-carousel/slick/slick.js', 
+    return src([        
         'node_modules/jquery/dist/jquery.js',
+        'node_modules/slick-carousel/slick/slick.js', 
         'app/js/main.js'])
       .pipe (concat ('main.min.js'))
       .pipe (uglify())

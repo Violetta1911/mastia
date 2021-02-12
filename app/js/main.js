@@ -1,6 +1,6 @@
 $(function(){
 
-    $('.home__slider').slick({
+    $('.care__slider').slick({
       infinite: true,
       slidesToShow: 1,
       slidesToScroll: 1,
@@ -23,4 +23,15 @@ $(function(){
         arrows: true,
         dots: false,
       }); 
+
+      $('.choose__tab  .tab').on('click', function(event) {
+        let id = $(this).attr('data-id');    
+          $(this).addClass('active');           
+          $('.choose__tab').find('.tab__item').removeClass('active-tab').hide();
+          $('.choose__tab .tabs').find('.tab').removeClass('active');
+          $(this).addClass('active'); 
+          $('#'+id).addClass('active-tab').fadeIn(); 
+                    
+          return false;
+        });
 });
