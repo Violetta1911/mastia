@@ -23,6 +23,13 @@ $(function(){
         arrows: true,
         dots: false,
       }); 
+      $('.clients__slider').slick({
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        arrows: false,
+        dots: true,
+      });
 
       $('.choose__tab  .tab').on('click', function(event) {
         let id = $(this).attr('data-id');    
