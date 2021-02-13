@@ -60,6 +60,20 @@ html {
     margin: 0 auto;
     padding: 0 15px;
 }
+.navigation {
+    
+    padding: 23px 0;
+    background-color: $blue_bg;
+    &__inner {
+        @include flex;
+        align-items: center;
+    }
+    h2 {
+        color: #fff;
+        margin-bottom: 0;
+        line-height: 24px;
+    }
+}
 h1 {
     font-size: 35px;
     margin-bottom: 20px;
@@ -100,6 +114,22 @@ h3 {
             left: 0;
         }
 }
+
+.btn {    
+    &.mixitup-control-active {     
+             position: relative;
+             &::after {
+                 position: absolute;
+                 content: '';
+                 border-bottom:2px solid $blue_bg ;
+                 width: 100%; 
+                 top: 20px;
+                 left: 0px;
+              }        
+       }
+    }
+
+    
 // .container-fluid {
 //     max-width: 100%;
 //     margin: 0 auto;

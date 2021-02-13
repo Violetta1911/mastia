@@ -199,8 +199,7 @@
             
 
             & img:hover{
-                transform:  scale(1.2);
-                                              
+                transform:  scale(1.2);                                              
             }
 
             &__color1 {
@@ -424,20 +423,6 @@
 
 // start about page
 
-.navigation {
-    
-    padding: 23px 0;
-    background-color: $blue_bg;
-    &__inner {
-        @include flex;
-        align-items: center;
-    }
-    h2 {
-        color: #fff;
-        margin-bottom: 0;
-        line-height: 24px;
-    }
-}
 .about {
     p {
         line-height: 24px;
@@ -678,6 +663,52 @@
          
     }
 
+// start project page
+.project {
+    &__inner {
+        padding: 80px 0;
+    }
+    .project__navigation {
+       display: flex;
+       justify-content:flex-end;
+       margin-bottom: 50px;
+       .buttons {
+            @include flex; 
+            .btn {
+                padding: 0 5px;
+                border: transparent;
+                background-color: transparent;
+             }  
+             button + button {
+                margin-left: 60px;
+                position: relative;
+            &::before {
+                content: '/';
+                position: absolute;
+                left: -30px;             
+            } 
+           
+            }   
+            }                         
+         
+        }
+    
+    .project__box {
+        display: flex;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        margin-left: -35px;
+    }
+    .box-item {
+        flex-basis: calc(33.33333% - 30px);
+        height: 365px;
+        background-color: $font-brown;
+        margin-left: 30px;
+        margin-bottom: 30px;
+
+        }
+}        
+    
 
 
 

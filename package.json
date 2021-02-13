@@ -11,8 +11,7 @@
   "dependencies": {
     "@fancyapps/fancybox": "^3.5.7",
     "ion-rangeslider": "^2.3.1",
-    "jquery-form-styler": "^2.0.2",
-    "mixitup": "^3.3.1"
+    "jquery-form-styler": "^2.0.2"
   },
   "devDependencies": {
     "browser-sync": "^2.26.13",
@@ -29,6 +28,7 @@
     "gulp-uglify-es": "^2.0.0",
     "jquery": "^3.5.1",
     "magnific-popup": "^1.1.0",
+    "mixitup": "^3.3.1",
     "normalize.css": "^8.0.1",
     "slick-carousel": "^1.8.1",
     "uglify-es": "^3.3.9"

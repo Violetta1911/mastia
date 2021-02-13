@@ -32,8 +32,7 @@ $(function(){
       });
 
       $('.choose__tab  .tab').on('click', function(event) {
-        let id = $(this).attr('data-id');    
-          $(this).addClass('active');           
+        let id = $(this).attr('data-id');          
           $('.choose__tab').find('.tab__item').removeClass('active-tab').hide();
           $('.choose__tab .tabs').find('.tab').removeClass('active');
           $(this).addClass('active'); 
@@ -41,4 +40,6 @@ $(function(){
                     
           return false;
         });
+
+        let mixer = mixitup ('.project__box');  
 });
