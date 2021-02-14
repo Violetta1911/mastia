@@ -32,13 +32,20 @@ $(function(){
       });
 
       $('.choose__tab  .tab').on('click', function(event) {
-        let id = $(this).attr('data-id');          
-          $('.choose__tab').find('.tab__item').removeClass('active-tab').hide();
-          $('.choose__tab .tabs').find('.tab').removeClass('active');
-          $(this).addClass('active'); 
-          $('#'+id).addClass('active-tab').fadeIn(); 
-                    
-          return false;
+        let id = $(this).attr('data-id');     
+        const $tabItem = $('.choose__tab').find('.tab__item');
+        const $tab =  $('.choose__tab .tabs').find('.tab');
+
+          if ($tabItem.hasClass('active-tab')) {
+            $tabItem.removeClass('active-tab').hide();
+            $tab.removeClass('active');
+          }
+          else {
+            $(this).addClass('active'); 
+            $('#'+id).addClass('active-tab').fadeIn();  
+          }     
+                                     
+           return false;
         });
 
         let mixer = mixitup ('.project__box');  
