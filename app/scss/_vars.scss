@@ -68,5 +68,11 @@ $blue: #219ee2;
         cursor:pointer;      
     }
  }
+ @mixin arrow-right {
+    content: "\f105";
+    font-family: 'icomoon';
+    color: $blue_bg;
+     
+ }
   
   
