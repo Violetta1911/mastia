@@ -779,6 +779,7 @@
                 margin-bottom: 10px;
             }
             span {
+                display: block;
                 margin-bottom: 15px;
                 font-style: italic;
             }
@@ -823,31 +824,53 @@
             display: inline-block;
             color: #ff7d7d;
             padding-bottom: 40px;
-        }
+        }       
         input {
-            width: 240px;
-            margin-bottom: 15px;
-            padding: 15px 22px;
-            border: 1px solid #ebebeb;
+            max-width: 240px;
+            margin-bottom: 15px;    
         }
-        textarea {
-            width: 100%;
-            border: 1px solid #ebebeb;
-            padding: 15px;
+        textarea {           
             margin-bottom: 15px;
-            color: #6f6f6f;
         }
+           
         button {
-            @include btn-font;
-            padding: 12px; 
-            border: none;
+            padding: 12px;
         }
+                        
+        }
+        }
+        
     }
 
+// start contact page 
+.contact {
+    &__form {
+        padding: 80px 0;
     }
+    form {
+        .input-inner {
+            margin-bottom: 30px;
+        }
+        
+        input {
+            width: 555px;
+            margin-bottom: 24px;    
+        }
+        textarea {           
+            margin-bottom: 30px;
+        }
+           
+        button {
+            padding: 13px 30px;
+            font-family: 'Raleway';
+        }
+                        
+        }
+
+} 
    
  
-}
+
 
 
 

@@ -15,9 +15,7 @@ html {
      color: inherit;
      outline: none;
  }
- span {
-     display: block;
- }
+ 
 
  ul,
  li,
@@ -237,6 +235,33 @@ h3 {
 
     }
     
+}
+form {
+
+    .input-inner {
+        @include flex;
+        flex-wrap: wrap;
+    }
+    input {
+        padding: 15px 22px;
+        border: 1px solid #ebebeb;        
+        &::placeholder{
+            font-family: 'Open Sans Light';    
+        }
+        
+    }
+    textarea {
+        width: 100%;
+        border: 1px solid #ebebeb;
+        padding: 15px;
+        color: #6f6f6f; 
+        font-family: 'Open Sans Light';
+    }
+       
+    button {
+        @include btn-font;
+        border: none;
+    }
 }
 
 
