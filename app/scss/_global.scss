@@ -14,7 +14,9 @@ html {
      text-decoration: none;
      color: inherit;
      outline: none;
-
+ }
+ span {
+     display: block;
  }
 
  ul,
@@ -114,6 +116,129 @@ h3 {
             left: 0;
         }
 }
+.title-blog {
+    text-transform: none;
+        color: $font-grey;
+        font-weight: bold;
+}
+.blog-content {
+       
+    width: 730px;
+    
+    .item-image {
+        height: 350px;
+        background-color: $bg-brown;
+        position: relative;
+        margin-bottom: 33px;
+        &__date {
+            position: absolute;
+            bottom: 40px;
+            width: 115px;
+            padding:  16px 5px;
+            background-color: $blue_bg;
+            color: #fff;
+            text-transform: uppercase;
+           
+            em {
+                display: block;
+                text-transform: none;
+                font-style: unset;
+            }
+        }
+       
+    }
+  
+    .content-item {
+        margin-bottom: 80px;
+        width: 100%;
+        position: relative;
+       
+        p {            
+            padding-bottom: 20px;
+            line-height: 22px;            
+        }
+        }
+}  
+.aside {
+    width: 360px; 
+    h2 {
+        color: $font-brown;
+    } 
+    input {   
+        width: 100%;     
+     padding: 13px;
+     font-style: italic;
+     background-color: #ebebeb;
+     border: none; 
+     outline: none;            
+    }
+    form {
+        position: relative;
+        margin-bottom: 25px;
+    }
+    .icon-search-plus::before{
+        font-family: 'icomoon';                    
+        position: absolute;
+        right:  20px;
+        top: 13px;                        
+    }
+    .recent-posts {
+        margin-bottom: 40px;
+        &__item {
+            @include flex;
+            margin-bottom: 30px;
+            span {
+                display: block;
+                line-height: 22px;
+                margin-bottom: 4px;                   
+            }
+            h4 {
+                text-transform: uppercase;
+            }
+        }
+        
+        .item-info {
+            padding-top: 5px;
+        }
+        .item-image {
+            min-width: 80px;
+            height: 80px;
+            background-color: $bg-brown;
+            margin-right: 20px;
+        }
+
+    }
+    .lates-projects {
+        h2 {
+            text-transform: uppercase;
+        }
+        &__inner {
+            @include flex;
+            flex-wrap: wrap;
+        }
+        &__item {
+            width: 165px;
+            height: 165px;
+            background-color: $bg-brown;
+            margin-bottom: 30px;
+
+        }
+    }
+    .blog-categories {
+        ul {
+            li {
+                margin-bottom:15px ;
+                &::before {
+                   @include  arrow-right;
+                    font-size: 12px;
+                }
+            }
+        }
+
+    }
+    
+}
+
 
 .btn {    
     &.mixitup-control-active {     
