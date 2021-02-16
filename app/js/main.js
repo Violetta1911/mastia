@@ -48,5 +48,9 @@ $(function(){
            return false;
         });
 
+        $('.menu-btn').on('click', function (){
+          $('.menu-list').slideToggle('')
+          });
+
         let mixer = mixitup ('.project__box');  
 });

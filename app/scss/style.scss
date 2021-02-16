@@ -21,62 +21,40 @@
     &__contacts {
         @include flex;
         padding:  18px 0;
-            .social{
-                @include flex;
-                max-width: 90px;
-                li {
-                    margin-right: 15px;
-                    a{ 
-                        width: 15px;
-                        height: 15px;
-                    }
-                }
-                               
-                }
-            .contacts {
-            @include flex;
-            li {
-                a, span {
-                    color: $font-grey;
-                    font-size: 14px;
-                    font-family: 'Open Sans', sans-serif;
-                }
-                & +li {
-                    margin-left: 45px;
-                }
-            }
-
-               }    
+            
        }
+       .social{
+        @include flex;
+        max-width: 90px;
+        margin-right: 20px;
+        
+        li {
+            margin-right: 15px;
+            a{ 
+                width: 15px;
+                height: 15px;
+            }
+        }
+                       
+        }
+    .contacts {
+    @include flex;
+    li {
+        a, span {
+            color: $font-grey;
+            font-size: 14px;
+            font-family: 'Open Sans', sans-serif;
+        }
+        & +li {
+            margin-left: 45px;
+        }
+    }
+
+       }    
     &__menu {
         padding: 27px 0 31px;
         border-top: 1px solid #dedede;
-        nav {
-            ul {                
-                @include flex;
-                li {
-                   
-                     a {
-                        transition: all 0.5s;
-                    }
-                   & + li{
-                    margin-left: 30px;
-                   } 
-                   &.contact-us {
-                    margin-left: 40px;
-                }
-                &.home {
-                    margin-right: 5px;
-                }
-                a:hover,
-                a:active {
-                    color: $blue_fonts;                    
-                }
-               
-                }  
-            }
-           
-        }
+       
         a{
             color: $font-brown;
             text-transform: uppercase;

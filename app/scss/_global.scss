@@ -1,7 +1,9 @@
 html {
     box-sizing: border-box;
     height: 100%;
+  
 }
+    
 
  *,
  *::before,
@@ -33,8 +35,7 @@ html {
     font-weight: 400;
     font-size: 14px;
     color: $font-grey;
-     height: 100%;
-    
+     height: 100%;    
       }
 
 .wrapper {
@@ -60,6 +61,39 @@ html {
     margin: 0 auto;
     padding: 0 15px;
 }
+.menu-btn {
+    display: none;
+    li {
+        width: 40px;
+        margin-bottom: 10px;
+        border-bottom: 2px solid $blue_fonts;
+    }
+}
+
+.menu-list {                
+        @include flex;
+        li {
+           
+             a {
+                transition: all 0.5s;
+            }
+           & + li{
+            margin-left: 30px;
+           } 
+           &.contact-us {
+            margin-left: 40px;
+        }
+        &.home {
+            margin-right: 5px;
+        }
+        a:hover,
+        a:active {
+            color: $blue_fonts;                    
+        }
+       
+        }  
+    }
+
 .navigation {
     
     padding: 23px 0;
@@ -244,7 +278,8 @@ form {
     }
     input {
         padding: 15px 22px;
-        border: 1px solid #ebebeb;        
+        border: 1px solid #ebebeb; 
+        outline-color: $blue_fonts;       
         &::placeholder{
             font-family: 'Open Sans Light';    
         }
@@ -255,7 +290,8 @@ form {
         border: 1px solid #ebebeb;
         padding: 15px;
         color: #6f6f6f; 
-        font-family: 'Open Sans Light';
+        font-family: 'Open Sans Light';       
+    outline-color: $blue_fonts;
     }
        
     button {
@@ -287,19 +323,6 @@ form {
         text-align: center;
         margin: 0 15px;
     }
-
-    
-// .container-fluid {
-//     max-width: 100%;
-//     margin: 0 auto;
-//     padding: 0 30px;
-// }
-
-// @media (max-width: 720px) {
-//     .container-fluid {
-//         padding: 0 15px;
-//     }
-// }
 
  .breadcrumbs {
    
