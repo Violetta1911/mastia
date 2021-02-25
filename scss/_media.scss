@@ -1,0 +1,120 @@
+@media (max-width: 1200px) {      
+    .menu-btn {
+        display: block;
+        position: absolute;
+        right: 20px;
+        }        
+        .menu-list { 
+            display: none;           
+            position: absolute;
+            top: 210px;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            text-align: center;          
+            background-color: #fff;
+               
+        a {
+             display: block;
+             padding: 10px 0 ;
+             border-bottom: 1px solid $blue_fonts;
+             }
+         li {
+                 display: block;
+                 & + li {
+                     margin-left: 0;
+                   }
+             &.contact-us {
+                margin-left: 0px;
+            }
+            &.home {
+                margin-right: 0px;
+            }
+            } 
+}
+.projects__items {
+   
+}
+
+
+}
+
+@media (max-width: 900px) {
+    h1 {
+        font-size: 28px;
+    }
+    .care__slider {
+        padding: 150px 40px 265px 30px;
+        height: 455px;
+        &-text
+        {
+            max-width: 420px;
+        }
+        .slick-prev, .slick-next {
+            top: 240px;
+            width: 50px;
+            height: 50px;
+        }  
+    }
+}
+@media (max-width: 760px) {  
+    .header__menu {
+        padding: 15px 0;
+        .logo {
+            width: 170px;
+            height: 60px;
+            img {
+                max-width: 100%;
+                height: 100%;
+            }        
+        }
+    }  
+    .header__contacts {
+        display: none;
+    }
+    .menu-list {
+        top: 90px;        
+    }
+    h1 {
+        font-size: 24px;
+    }
+    .care__slider {
+        padding: 150px 40px 165px 30px;
+        height: 455px;
+        &-text
+        {
+            max-width: 370px;
+        }
+        
+    }
+    
+}
+@media (max-width: 600px) {
+    h1 {
+        font-size: 18px;
+    }
+    .care__slider {
+        padding: 100px 40px 100px 30px;
+        height: auto;
+        &-text
+        {
+            max-width: 250px;
+            font-size: 12px;
+        }
+        .slick-prev, .slick-next {
+            top: 170px;
+            width: 30px;
+            height: 30px;
+        }  
+        .slick-prev::before,
+        .slick-next::before {
+            font-size: 20px;
+        }
+        .slick-prev {
+            left: 20px;
+        }
+        .slick-next {
+            right: 20px;
+        }
+    }
+}
